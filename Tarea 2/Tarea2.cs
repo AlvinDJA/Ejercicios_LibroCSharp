@@ -39,7 +39,7 @@ namespace Ejercicios_LibroCSharp
                         pausa();
                         break;
                     case '5':
-                        Ejercicio5_5.factor();
+                        Ejercicio5_5.numLetra();
                         pausa();
 
                         break;

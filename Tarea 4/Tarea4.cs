@@ -2,44 +2,46 @@
 
 namespace Ejercicios_LibroCSharp
 {
-    class Program
+    class Tarea4
     {
-        private const string Value = "Tareas\n1)1\n2)2\n3)3\n4)4\n0)Salir";
-
         public static void pausa()
         {
             Console.WriteLine("Pulse cualquier letra para continuar");
             Console.ReadKey();
             Console.Clear();
         }
-        static void Main(string[] args)
+        public static void Tarea_4()
         {
             char opcion = '0';
             do
             {
                 Console.WriteLine("Que desea hacer?");
-                Console.WriteLine(Value);
+                Console.WriteLine("Ejercicios\n1)8.3\n2)8.5\n3)9.1\n4)9.3\n5)9.4\n0)Salir");
                 opcion = Convert.ToChar(Console.ReadLine());
                 switch (opcion)
                 {
                     case '0':
                         return;
                     case '1':
-                        Tarea1.Tarea_1();
+                        Ejercicio8_3.hora();
                         pausa();
                         break;
                     case '2':
-                        Tarea2.Tarea_2();
+                        Ejercicio8_5.cadenas();
                         pausa();
                         break;
                     case '3':
-                        Tarea3.Tarea_3();
+                        Ejercicio9_1.productos();
                         pausa();
                         break;
                     case '4':
-                        Tarea4.Tarea_4();
+                        Ejercicio9_3.mascotadueno();
                         pausa();
-                        break;    
+                        break;
+                    case '5':
+                        Ejercicio9_4.neumatico();
+                        pausa();
+                        break;
                     default:
                         Console.WriteLine("Opcion no valdia!"); break;
                 }

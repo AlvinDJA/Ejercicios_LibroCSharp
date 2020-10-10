@@ -4,7 +4,7 @@ namespace Ejercicios_LibroCSharp
 {
     class Program
     {
-        private const string Value = "Tareas\n1)1\n2)2\n3)3\n4)4\n0)Salir";
+        private const string Value = "Tareas\n1)1\n2)2\n3)3\n4)4\n5)5\n0)Salir";
 
         public static void pausa()
         {
@@ -39,7 +39,11 @@ namespace Ejercicios_LibroCSharp
                     case '4':
                         Tarea4.Tarea_4();
                         pausa();
-                        break;    
+                        break;
+                    case '5':
+                        Tarea5.Tarea_5();
+                        pausa();
+                        break;
                     default:
                         Console.WriteLine("Opcion no valdia!"); break;
                 }
